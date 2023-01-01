@@ -31,6 +31,8 @@
 #include <imm.h>
 #include <oleauto.h>
 
+#define SDL_DISABLE_WINDOWS_IME
+
 #ifndef SDL_DISABLE_WINDOWS_IME
 static void IME_Init(SDL_VideoData *videodata, HWND hwnd);
 static void IME_Enable(SDL_VideoData *videodata, HWND hwnd);
